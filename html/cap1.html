@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/cap1.css">
+</head>
+
+<body>
+    <section class="container welcome d-flex align-items-center vh-100">
+        <div id="carouselExample" class="carousel slide w-100">
+            <div class="carousel-inner">
+                <!-- escena 1 -->
+                <div class="carousel-item active escena1">
+                    <img src="../recursos/escena1/barrio-escenario-casas.png" class="d-block w-100" alt="...">
+                    <img id="escena1gif" src="../recursos/escena1/narracion.gif" class="d-block w-100 d-none" alt="">
+                    <img class="contorno-escena1 d-none" src="../recursos/escena1/contorno-verde.png" alt="">
+                    <div id="div-contorno-escena1"></div>
+                    <img id="imgEscena1gif" src="../recursos/escena1/imgNarracion.gif" class="d-block w-100 d-none"
+                        alt="">
+                    <img id="arrow1Escena1" src="../img/flecha-amarilla.png" alt="">
+                    <img id="arrow2Escena1" src="../img/flecha-amarilla.png" class="d-none" alt="">
+                    <audio id="audioEscena1">
+                        <source src="../recursos/escena1/audioEscena1.mp3" type="audio/mp3">
+                        Tu navegador no soporta el tag de audio.
+                    </audio>
+                    <!-- <video id="escena1Narracion" class="d-block w-100 d-none" onended="this.controls=false" controlsList="nodownload">
+                        <source src="../recursos/escena1/narracion.mp4" type="video/mp4">
+                        Tu navegador no soporta la etiqueta de video.
+                    </video>  -->
+                </div>
+                
+                <!-- escena 2 -->
+                <div class="carousel-item escena2">
+                    <img src="../recursos/escena2/comedor-fondo.png" class="d-block w-100" alt="...">
+                    <img src="../recursos/escena2/comedor-plantas-.png" class="escena2Plantas" alt="...">
+                    <img src="../recursos/escena2/comedor-jarron.png" class="d-block w-100 escena2imgs" alt="...">
+                    <img src="../recursos/escena2/comedor-sillas.png" class="d-block w-100 escena2imgs" alt="...">
+                    <img id="familiaEscena2" src="../recursos/escena2/animacionfamilia.gif" class="d-block w-100 escena2imgs d-none" alt="...">
+                    <img id="imgFamiliaEscena2" src="../recursos/escena2/imgFamilia.gif" class="d-block w-100 escena2imgs d-none" alt="...">
+                    <img src="../recursos/escena2/comedor-mesa.png" class="d-block w-100 escena2imgs" alt="...">
+                    <img src="../recursos/escena2/comedor-gaseosas.png" class="d-block w-100 escena2imgs" alt="...">
+                    <img src="../recursos/escena2/lamparas.png" class="escena2Lamparas lampara1" alt="...">
+                    <img src="../recursos/escena2/lamparas.png" class="escena2Lamparas lampara2" alt="...">
+                    <img src="../recursos/escena2/lamparas.png" class="escena2Lamparas lampara3" alt="...">
+                    <img src="../recursos/escena2/humos.gif" class="d-block w-100 escena2imgs humos" alt="...">
+                    <img id="escena2Gomez" src="../recursos/escena2/gomez.png" class="d-none" alt="...">
+                    <img id="contornoEscena2" src="../recursos/escena2/comedor-contorno-verde.png" class="d-block w-100 escena2imgs d-none" alt="...">
+                    <div id="divContornoEscena2"></div>
+                    <img id="narracionEscena2" src="../recursos/escena2/narracion.gif" class="d-block w-100 escena2imgs d-none" alt="...">
+                    <img id="imgNarracionEscena2" src="../recursos/escena2/imgNarracion0.gif" class="d-block w-100 escena2imgs d-none" alt="...">
+                    <img id="arrow1Escena2" src="../img/flecha-rosa.png" alt="">
+                    <img id="arrow2Escena2" src="../img/flecha-rosa.png" class="d-none" alt="">
+                    <audio id="audioEscena2">
+                        <source src="../recursos/escena2/audioEscena2.mp3" type="audio/mp3">
+                        Tu navegador no soporta el tag de audio.
+                    </audio>
+                </div>
+                
+                <!-- escena 3 -->
+                <div class="carousel-item">
+                    <img src="../img/escenario4.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/escenario5.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/escenario2.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="controladores-comic">
+            <div class="controladores-btns h-100 d-flex flex-column justify-content-around">
+                <a href="../index.html" class="d-flex "><img class="img-btns m-auto" src="../img/img-menu.png" alt=""></a>
+                <div class="music-container">
+                    <audio id="music" src="../recursos/music.mp3" preload="auto" loop=""></audio>
+                    <img id="playMusicBtn" class="img-btns d-flex m-auto" src="../img/img-sonido.png"
+                        alt="Reproducir/Pausar">
+                    <input type="range" id="musicSlider" min="0" max="1" step="0.1" value="0.1">
+                </div>
+                <div class="voices-container">
+                    <img id="playVoicesBtn" class="img-btns d-flex m-auto" src="../img/img-dialogos.png" alt="">
+                    <input type="range" id="voicesSlider" min="0" max="1" step="0.1" value="1">
+                </div>
+
+                <div>
+                    <!-- Button trigger modal -->
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <img src="../img/img-info.png" class="img-btns m-auto" alt="">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modalContainer">
+                                    <h1 class="text-center titulo">BIENVENIDO AL COMIC INTERACTIVO <br>EL SABOR DE LA
+                                        SALUD
+                                    </h1>
+                                    <br>
+                                    <p class="">¡Bienvenidos a esta emocionante historia en formato de cómic! Acompaña a
+                                        la
+                                        familia Rodríguez en su viaje de descubrimiento y transformación mientras
+                                        luchan por una vida más saludable.</p>
+                                    <br>
+                                    <h3 class="text-center">Instrucciones</h3> <br>
+                                    <p>Para interactuar con el contenido haz click donde indican las flechas a medida
+                                        que
+                                        salgan.</p>
+                                    <p>Solo dar un click, evitar dar doble click</p>
+                                    <p>No pasar a la siguiente escena antes de que la animación se lo indique.</p>
+                                    <p>Para volver a ver cada una de las escenas recargar la página y avanzar hasta la
+                                        escena correspondiente.</p> <br>
+                                    <h3 class="text-center">Al iniciar el comic te encontrarás con un menu en la parte
+                                        derecha.</h3> <br>
+                                    <p><img class="introduccion-iconos" src="../img/img-menu.png" alt="">Con este botón
+                                        podras volver al menu de
+                                        capítulos.</p>
+                                    <p><img class="introduccion-iconos" src="../img/img-sonido.png" alt="">Al oprimir
+                                        este
+                                        boton podrás pausar o reproducir la musica de ambiente, debajo del mismo
+                                        encuentras
+                                        un
+                                        controlador de sonido. </p>
+                                    <p><img class="introduccion-iconos" src="../img/img-dialogos.png" alt="">Al oprimir
+                                        este
+                                        boton podrás activar o desactivar el sonido de la narración y los dialogos,
+                                        debajo
+                                        del mismo
+                                        encuentras un controlador de sonido.
+                                    </p>
+                                    <p><img class="introduccion-iconos" src="../img/img-info.png" alt="">Con este botón
+                                        podrás volver a ver las instrucciones en cualquier momento.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<script src="../js/cap1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+</html>

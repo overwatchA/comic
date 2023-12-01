@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El sabor de la salud</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/indice.css">
+</head>
+
+<body class="">
+    <div class="container vh-100 d-flex">
+        <div id="instructions">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="../img/img-info.png" class="img-btns m-auto" alt="">
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modalContainer">
+                                <h1 class="text-center titulo">BIENVENIDO AL COMIC INTERACTIVO <br>EL SABOR DE LA
+                                    SALUD
+                                </h1>
+                                <br>
+                                <p class="">¡Bienvenidos a esta emocionante historia en formato de cómic! Acompaña a
+                                    la
+                                    familia Rodríguez en su viaje de descubrimiento y transformación mientras
+                                    luchan por una vida más saludable.</p>
+                                <h3 class="text-center">Instrucciones</h3> <br>
+                                <p>Para interactuar con el contenido haz click donde indican las flechas a medida
+                                    que
+                                    salgan.</p>
+                                <p>Solo dar un click, evitar dar doble click</p>
+                                <p>No pasar a la siguiente escena antes de que la animación se lo indique.</p>
+                                <p>Para volver a ver cada una de las escenas recargar la página y avanzar hasta la
+                                    escena correspondiente.</p> <br>
+                                <h3 class="text-center">Al iniciar el comic te encontrarás con un menu en la parte
+                                    derecha.</h3> <br>
+                                <p><img class="introduccion-iconos" src="../img/img-menu.png" alt="">Con este botón
+                                    podras volver al menu de
+                                    capítulos.</p>
+                                <p><img class="introduccion-iconos" src="../img/img-sonido.png" alt="">Al oprimir
+                                    este
+                                    boton podrás pausar o reproducir la musica de ambiente, debajo del mismo
+                                    encuentras
+                                    un
+                                    controlador de sonido. </p>
+                                <p><img class="introduccion-iconos" src="../img/img-dialogos.png" alt="">Al oprimir
+                                    este
+                                    boton podrás activar o desactivar el sonido de la narración y los dialogos,
+                                    debajo
+                                    del mismo
+                                    encuentras un controlador de sonido.
+                                </p>
+                                <p><img class="introduccion-iconos" src="../img/img-info.png" alt="">Con este botón
+                                    podrás volver a ver las instrucciones en cualquier momento.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img id="arrow" class="" src="./img/flecha-amarilla.png" alt="">
+        <div class="indice m-auto">
+            <h1 class="text-center">Índice de capítulos</h1>
+            <div class="capitulos d-flex">
+                <div class="cap1 text-center">
+                    <a href="./html/cap1.html"><img src="./img/capitulo1.png" alt="" class="img-cap img-cap1"></a>
+                    <a href="./html/cap1.html" class="btn-cap">Capítulo 1</a>
+                </div>
+                <div class="cap2 text-center">
+                    <a href=""><img src="./img/capitulo2.png" alt="" class="img-cap img-cap2"></a>
+                    <a href="" class="btn-cap">Capítulo 2</a>
+                </div>
+                <div class="cap3 text-center">
+                    <a href=""><img src="./img/capitulo3.png" alt="" class="img-cap img-cap3"></a>
+                    <a href="" class="btn-cap">Capítulo 3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="./js/indice.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+</html>

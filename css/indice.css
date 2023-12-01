@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1.1rem;
+}
+
+@media (min-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1320px;
+}
+}
+
+body{
+    position: relative !important;
+}
+
+#instructions{
+    position: absolute;
+    top: 5%;
+    right: 0px;
+}
+
+.introduccion-iconos{
+    width: 3rem;
+    margin-right: 1rem;
+    margin-bottom: .8rem;
+}
+
+.img-btns{
+    width: 23%;
+    cursor: pointer;
+}
+
+.modalContainer{
+    margin: .5rem 2rem 2rem 2rem;
+    font-size: 1.2rem;
+}
+
+.modal {
+    --bs-modal-width: 50% !important;
+}
+
+
+
+
+#arrow{
+    width: 5%;
+    position: absolute;
+    top: 18%;
+    right: 18%;
+    animation: arrow 1s linear infinite;
+}
+
+@keyframes arrow{
+    0%{
+        top: 18%;
+        right: 18%;
+    }
+
+    50%{
+        top: 15%;
+        right: 15%;
+    }
+
+    100%{
+        top: 18%;
+        right: 18%;
+    }
+}
+
+
+
+
+
+h1{
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #6f86a9;
+    
+}
+
+.indice > h1{
+    font-size: 3.5rem;
+    margin-bottom: 5rem;
+}
+
+
+
+.capitulos{
+    gap: 8rem;
+}
+
+.img-cap{
+    width: 90%;
+    margin-bottom: 17%;
+    opacity: 85%;
+}
+
+.img-cap:hover{
+    opacity: 100%;
+}
+
+
+
+.btn-cap{
+    padding: .8rem 2.5rem;
+    background-color: #88C546;
+    color: white;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.btn-cap:hover{
+    background-color: #83be44;
+}

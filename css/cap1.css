@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.introduccion-iconos{
+    width: 3rem;
+    margin-right: 1rem;
+    margin-bottom: .8rem;
+}
+
+body{
+    background-color: #f7f7f7;
+}
+
+.titulo{
+    color: #6f86a9;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 5rem;
+    height: 5rem;
+    color: black;
+}
+
+/* ---------controladores ----------- */
+
+.controladores-comic{
+    width: 10%;
+    height: 88vh;
+    background-color: #e4e4e4;
+}
+
+.img-btns{
+    width: 80%;
+    cursor: pointer;
+}
+
+.music-container, .voices-container{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.modalContainer{
+    margin: .5rem 2rem 2rem 2rem;
+    font-size: 1.2rem;
+}
+
+.modal {
+    --bs-modal-width: 50% !important;
+}
+
+
+
+
+/* --------------escena 1--------------- */
+.escena1{
+    position: relative;
+    background-image: url(../recursos/escena1/barrio-escenario-nubes.png), url(../recursos/escena1/barrio-escenario-sombras.png), url(../recursos/escena1/barrio-escenario-cielo.png) ;
+    background-size: cover;
+    /* background-position: 0px, 0px, 0px;
+    background-position: 1020px, 3500px, 0px ; */
+    animation: fondo-escena1-move 20s linear infinite;
+}
+
+.contorno-escena1{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+#div-contorno-escena1{
+    position: absolute;
+    width: 15%;
+    height: 40%;
+    /* background-color: orange; */
+    top: 20%;
+    right: 20%;
+    cursor: pointer;
+}
+
+#arrow1Escena1{
+    width: 6.5%;
+    position: absolute;
+    bottom: 30%;
+    right: 35%;
+    animation: flecha1Escena1 1s linear infinite;
+}
+
+#escena1gif{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+/* #escena1Narracion{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+} */
+
+#imgEscena1gif{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+
+#arrow2Escena1, #arrow2Escena2{
+    width: 6.5%;
+    position: absolute;
+    bottom: 34%;
+    right: 10%;
+    animation: flecha2Escena1 1s linear infinite;
+}
+
+
+
+@keyframes fondo-escena1-move {
+    0%{
+        background-position-x: 0px, 0px, 0px;
+    }
+
+    100%{
+        background-position-x: 2040px, 3615px, 0px ;
+    }
+}
+
+
+@keyframes flecha1Escena1 {
+    0%{
+        bottom: 28%;
+        right: 35%;
+    }
+
+    50%{
+        bottom: 32%;
+        right: 30%;
+    }
+
+    100%{
+        bottom: 28%;
+        right: 35%;
+    }
+}
+
+@keyframes flecha2Escena1 {
+    0%{
+        bottom: 34%;
+        right: 10%;
+    }
+
+    50%{
+        bottom: 38%;
+        right: 8%;
+    }
+
+    100%{
+        bottom: 34%;
+        right: 10%;
+    }
+}
+
+
+
+/*------------- escena 2 -----------------*/
+
+.escena2{
+    position: relative;
+}
+
+.escena2imgs{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.escena2Plantas{
+    position: absolute;
+    width: 16%;
+    transform-origin: bottom center;
+    bottom: 28%;
+    left: 1%;
+    animation:plantas 20s linear infinite;
+}
+
+@keyframes plantas {
+    0%{
+        transform: rotateZ(20deg);
+    }
+
+    50%{
+        transform: rotateZ(-3deg);
+    }
+
+    100%{
+        transform: rotateZ(20deg);
+    }
+}
+
+
+
+.escena2Lamparas{
+    position: absolute;
+    width: 22%;
+    top: -6.6%;
+    opacity: 10;
+    transform-origin: top center;
+    animation: lamparas 10s linear infinite;
+}
+
+.lampara1{
+    left: 16.5%;
+}
+
+.lampara2{
+    left: 39%;
+}
+
+.lampara3{
+    right: 16.5%;
+}
+
+
+@keyframes lamparas {
+    0% {
+        transform: rotateZ(3deg);
+    }
+
+    50% {
+        transform: rotateZ(-3deg);
+    }
+
+    100% {
+        transform: rotateZ(3deg);
+    }
+}
+
+.humos{
+    opacity: 50%;
+}
+
+
+#divContornoEscena2{
+    position: absolute;
+    width: 75%;
+    height: 30%;
+    bottom: 10%;
+    right: 13%;
+    cursor: pointer;
+}
+
+
+
+
+
+#escena2Gomez{
+    width: 15%;
+    position: absolute;
+    top: 18%;
+    right: 13%;
+    animation: gomez 3s ease-in-out;
+    transform: scale(0);
+}
+
+@keyframes gomez {
+    0%{
+        transform: scale(0);
+    }
+
+    50%{
+        transform: scale(120%);
+    }
+
+    90%{
+        transform: scale(100%);
+    }
+
+    100%{
+        transform: scale(0%);
+    }
+}
+
+
+
+
+
+
+
+#arrow1Escena2{
+    transform: rotate(80deg);
+    width: 6.5%;
+    position: absolute;
+    bottom: 40%;
+    left: 15%;
+    animation: flecha1Escena2 1s linear infinite;
+}
+
+
+
+@keyframes flecha1Escena2 {
+    0%{
+        bottom: 43%;
+        left: 12%;
+    }
+
+    50%{
+        bottom: 40%;
+        left: 15%;
+    }
+
+    100%{
+        bottom: 43%;
+        left: 12%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1700px;
+}
+}
+
